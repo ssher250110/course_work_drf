@@ -1,4 +1,4 @@
-# Курсовая 7. DRF
+# DRF Habits
 
 ## Критерии приемки курсовой работы
 
@@ -19,6 +19,8 @@
 
 ## Инструкция для запуска проекта
 
+<details>
+<summary>Инструкция</summary>
 1. Клонируйте данный репозиторий к себе на локальную машину:
 
 ```bash
@@ -43,18 +45,23 @@ python manage.py migrate
 ```
 
 6. Запустите сервер
+
 ```bash
 python3 manage.py runserver
 ```
 
 7. Команда для суперпользователя
+
 ```bash
 python3 manage.py csu
 ```
 
 8. Команды для запуска Celery и Celery Beat
+
 ```bash
 celery -A config worker --loglevel=info
 celery -A config beat --loglevel=info
 
 ```
+
+</details>
